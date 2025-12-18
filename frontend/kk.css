@@ -1,0 +1,11 @@
+.item{
+    height:200px ;
+
+}
+.panel-image{
+    background-size: cover;
+    height: 200px;
+}
+.panel-content{
+    height: 200px;
+}

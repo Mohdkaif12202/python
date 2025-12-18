@@ -1,0 +1,12 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.alert{
+    width: 90vw;
+    height: 8vh;
+}

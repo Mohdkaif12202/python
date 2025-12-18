@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='/css/login.css')}}">
+</head>
+<body class='bg-dark bg-gradient'>
+    
+    
+    
+    <form method ='POST' action="/login">
+        <div id="outer">
+        <div>
+            <div id = "logo"><img id=logo src="{{url_for('static',filename='/images/logo.png')}}" ></div>
+            <h1 id = "heading">Login your acccout</h1>
+        </div>
+
+        <div id="input1">
+            <div>
+                <input placeholder="username" name ="f_username"  type="text">
+            </div> <br>
+            <div>
+                <input placeholder="password" name ="f_password" type="password">
+            </div>
+        </div>
+
+        <div id="forget">
+            <div id="forget_inner">
+                <input id="check" type="checkbox" >
+                <p>remember</p>
+            </div>
+            <div><a href ="/frontend/login_page/password copy.html"><p style="color:rgb(38, 132, 220);">Forgot password</p></a>
+                
+            </div>      
+        </div>
+       
+        <div id="done">
+            <a href="#"><button type="submit">Login</button></a>
+        </div>
+        <div id="bottom">
+            <p>Don't you have any account?<a href="/signup"> Sign up</a></p>
+        </div>
+        
+    </div>
+
+    </form>
+    
+    
+    
+</body>
+</html>
